@@ -1,5 +1,7 @@
 package day03_IfStatements;
 
+import java.util.Scanner;
+
 public class C18_VizeFinalAyrıntılı {
 
         /* TASK :
@@ -29,4 +31,39 @@ public class C18_VizeFinalAyrıntılı {
                                                                      30(30 dahil) ile 40 arasında ise DD,
                                                                      30 'dan düşük ise FF            gelmeli.
          */
+        public static void main(String[] args) {
+            Scanner scan= new Scanner(System.in);
+            System.out.print("Vize sınav sonucunu girin: ");
+            double vize=scan.nextDouble();
+            System.out.print("Vize sınav sonucunu girin: ");
+            double finall=scan.nextDouble();
+
+            System.out.print("Vize sınav yuzdesini girin: ");
+            double vizeYuzde=scan.nextDouble();
+            System.out.print("Final sınav yuzdesini girin: ");
+            double finalYuzde=scan.nextDouble();
+
+            double ortamlama=(vize*vizeYuzde)+(finall*finalYuzde);
+            System.out.println("Ortalamanız : "+ ortamlama);
+
+            if(ortamlama>=90){
+                System.out.println("Gecme notunuz AA");
+            }else if(ortamlama>=80 && ortamlama<90){
+                System.out.println("Gecme notunuz BA");
+            }else if(ortamlama>=70 && ortamlama<80){
+                System.out.println("Gecme notunuz BB");
+            }else if(ortamlama>=60 && ortamlama<70){
+                System.out.println("Gecme notunuz CB");
+            }else if(ortamlama>=50 && ortamlama<60){
+                System.out.println("Gecme notunuz CC");
+            }else if(ortamlama>=40 && ortamlama<50){
+                System.out.println("Gecme notunuz DC");
+            }else if(ortamlama>=30 && ortamlama<40){
+                System.out.println("Gecme notunuz DD");
+            }else if(ortamlama<30){
+                System.out.println("Gecme notunuz FF");
+            }
+
+        }
+
 }
