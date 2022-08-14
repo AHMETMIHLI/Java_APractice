@@ -10,8 +10,20 @@ public class Q04_KelimeninTerstenYazilisi {
         System.out.println("4 harfli bir kelime girin");
         String kelime= scan.next();
 
-        String tersKelime=kelime.substring(3,4)+kelime.substring(2,3)+kelime.substring(1,2)+kelime.substring(0,1);
-        System.out.println("Kelimenin tersten yazilisi : "+ tersKelime);
+        if(kelime.length()==4){
+            String tersKelime=kelime.substring(3,4)+kelime.substring(2,3)+kelime.substring(1,2)+kelime.substring(0,1);
+            System.out.println("Kelimenin tersten yazilisi : "+ tersKelime);
+        }else System.out.println("4 Karakterlik kelime giriniz ");
+
+
+
+
+        // 2.czum yolu for ile  :
+        String tersStr="";
+        for (int i = kelime.length()-1; i >=0 ; i--) {
+            tersStr+=kelime.substring(i,i+1);
+        }
+        System.out.println("String'in for'la tersten yazilisi : "+ tersStr);
 
 
     }

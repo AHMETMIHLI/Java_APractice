@@ -20,9 +20,8 @@ public class C07_VucutKıtleEndexi {
         System.out.print("Kilonuzu girin: ");
         double kilo=scan.nextDouble();
         System.out.print("Boyunuzu cm cinsinden giriniz: ");
-        double boy=scan.nextDouble();
+        double boy=scan.nextDouble()/100;
 
-        boy=boy/100;
         double vkm=kilo/(boy*boy);
 
         System.out.println("Vucut kitle endeksiniz : "+ vkm);

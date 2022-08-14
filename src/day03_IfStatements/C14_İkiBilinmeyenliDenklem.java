@@ -32,12 +32,12 @@ public class C14_İkiBilinmeyenliDenklem {
           System.out.println("Delta : "+ d);
 
           if(d>0){
-              x1= (int) (-b+Math.sqrt(d)/(2*a));
-              x2= (int) (-b - Math.sqrt(d)/(2*a));
+              x1= (int)(-b+Math.sqrt(d)/(2*a)); //x1=(-b + kök(d)) / (2a)  ,
+              x2= (int)(-b - Math.sqrt(d)/(2*a));  // x2= (-b - kök(d)) / (2*a)
               System.out.println("2 tane kok vardir= "+"kok 1: "+x1+ ", kok 2: "+ x2);
               System.out.println();
           }else if(d==0){
-              x=-b/(2*a);
+              x=-b/(2*a); //x = -b/2a
               System.out.println("Bir tane kok vardır: "+ x);
           }else if(d<0){
               System.out.println("Kok yoktur");

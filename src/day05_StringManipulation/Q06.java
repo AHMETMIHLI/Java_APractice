@@ -11,6 +11,21 @@ public class Q06 {
         */
 
         Scanner scan=new Scanner(System.in);
+        System.out.println("e posta adresi giriniz:");
+        String email=scan.nextLine();
+
+        if(!email.contains("@")){
+            System.out.println("Gecerli bir e-mail giriniz");
+        }else if(email.contains("hotmail.com")){
+            email=email.replace("hotmail","gmail.com");
+            System.out.println(email);
+        }
+
+
+    }
+}
+/*
+  Scanner scan=new Scanner(System.in);
         System.out.println("lUTFEN BİR email GİRİNİZ");
 
         String str=scan.nextLine();
@@ -30,6 +45,4 @@ public class Q06 {
 
 
         }
-
-    }
-}
+ */
