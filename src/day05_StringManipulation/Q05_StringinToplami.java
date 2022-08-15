@@ -13,8 +13,8 @@ public class Q05_StringinToplami {
         String  str1= "%13.99";
         String str2= "%10.55";
 
-        str1=str1.replace("%","");
-        str2=str2.replace("%","");
+        str1=str1.replace("%",""); // 13.99
+        str2=str2.replace("%","");// 10.55
 
         double toplam= Double.parseDouble(str1)+Double.parseDouble(str2);
         System.out.println("String'lerin rakamsal olarak toplamı: "+ toplam);

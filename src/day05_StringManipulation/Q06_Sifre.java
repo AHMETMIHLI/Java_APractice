@@ -14,6 +14,7 @@ public class Q06_Sifre {
         System.out.println("e posta adresi giriniz:");
         String email=scan.nextLine();
 
+
         if(!email.contains("@")){
             System.out.println("Gecerli bir e-mail giriniz");
         }else if(email.endsWith("gmail.com")){

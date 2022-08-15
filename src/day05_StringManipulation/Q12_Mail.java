@@ -15,21 +15,32 @@ public class Q12_Mail {
        INPUT : techproed@hotmail.com OUTPUT : "Lutfen gmail hesabinizi girin"
        */
 
-        Scanner scan=new Scanner(System.in);
-        System.out.println("lUTFEN BİR email GİRİNİZ");
+        Scanner scan= new Scanner(System.in);
+        System.out.print("Lutfen mail adresinizi giriniz : ");
+        String email=scan.nextLine();
+        int ilkKullanım=email.toLowerCase().indexOf("gmail.com");
+        int sonKullanım=email.toLowerCase().lastIndexOf("gmail.com");
 
-        String str=scan.nextLine();
-
-
-        if (!str.contains("@")){
-            System.out.println("geçerli bir email giriniz");
+        if(!email.contains("@gmail.com")){
+            System.out.print("lutfen gmail adresini giriniz");
+            // bu kısımda gmail.com dışındaki mail adresi girildi ise devamında yapılması gerekenler asağıda yapıldı
+            email=scan.nextLine();
+            if(email.endsWith("@gmail.com")){
+                System.out.println("Email adresiniz kaydedildi");
+            }else {
+                System.out.print("2.kez yanlış giriş yaptın, giriş için son hakkını kullan ");
+                email= scan.nextLine();
+                if(email.endsWith("@gmail.com")){
+                    System.out.println("Sonunda adresi yazabildiniz :) ");
+                }else {
+                    System.out.println("Adresiniz bloke oldu , uzgunum:(");
+                }
+            }
+        }else if(email.endsWith("@gmail.com")) {
+            System.out.println("Adresiniz dogru sisteme giriş yaptınız.");
         }else {
-            if (str.endsWith("@gmail.com")){
-                System.out.println("email onaylandı");
-
-            }else System.out.println("lutfen gmail hesabınızı giriniz");
-
-
+            System.out.println("Lutfen yazimi kontrol edin, Yanlış adres girdiniz.");
+            // Bu kısımda @gmail.com adresini hatalı girdiği durumda yapılması gereken yapıldı
         }
 
 

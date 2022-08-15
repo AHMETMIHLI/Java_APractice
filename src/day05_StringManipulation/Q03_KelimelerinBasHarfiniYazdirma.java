@@ -30,11 +30,10 @@ public class Q03_KelimelerinBasHarfiniYazdirma {
 
         // 2.Cozum Yolu:
 
-        String [] arr=new String[3];
-        arr=isim.split(" ");
+        String [] arr=isim.split(" ");
         System.out.print(arr[0] = arr[0].toUpperCase().charAt(0) + ".");
         System.out.print(arr[1] = arr[1].toUpperCase().charAt(0) + ".");
-        System.out.print(arr[0] = arr[2].toUpperCase().charAt(0) + ".");
+        System.out.print(arr[2] = arr[2].toUpperCase().charAt(0) + ".");
 
 
         // 3.Cozum yolu :

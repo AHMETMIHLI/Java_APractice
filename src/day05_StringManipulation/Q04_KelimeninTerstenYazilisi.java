@@ -16,14 +16,17 @@ public class Q04_KelimeninTerstenYazilisi {
         }else System.out.println("4 Karakterlik kelime giriniz ");
 
 
-
-
         // 2.czum yolu for ile  :
         String tersStr="";
         for (int i = kelime.length()-1; i >=0 ; i--) {
             tersStr+=kelime.substring(i,i+1);
         }
         System.out.println("String'in for'la tersten yazilisi : "+ tersStr);
+
+        //3 .çözum yolu.
+
+        StringBuilder obj=new StringBuilder(kelime);
+        System.out.println("Reverse methodu ile ters str: "+ obj.reverse().toString());
 
 
     }

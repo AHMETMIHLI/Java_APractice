@@ -7,7 +7,7 @@ public class Q01_BoslukIceriyorMu {
         // TASK : Kullanıcıdan alacağınız bir stringde boşluk karakterinin olup olmadığını kontrol ediniz.
         // Boşluk içeriyorsa boşluğu siliniz.
 
-       Scanner scan= new Scanner(System.in);
+        Scanner scan= new Scanner(System.in);
         System.out.println("Bir String giriniz :");
         String str=scan.nextLine();
 

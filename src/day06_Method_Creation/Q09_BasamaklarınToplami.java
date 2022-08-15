@@ -2,7 +2,7 @@ package day06_Method_Creation;
 
 import java.util.Scanner;
 
-public class Q09 {
+public class Q09_BasamaklarınToplami {
 /*
     TASK :
     addDigits isminde bir method create ediniz.
@@ -18,7 +18,6 @@ public class Q09 {
                  2 , tek basamaklı olduğundan, bunu döndürün.
     */
 
-
     public static void main(String[] args) {
 
         Scanner scan=new Scanner(System.in);
@@ -26,16 +25,6 @@ public class Q09 {
         int sayi=scan.nextInt();
 
         addDigitd(sayi);
-
-
-
-
-
-
-
-
-
-
     }
 
     private static int addDigitd(int sayi) {//girilen sayının rakamlar toplamını verir
@@ -67,3 +56,4 @@ public class Q09 {
 
 
 }
+

@@ -21,7 +21,7 @@ public class Q07_Ternary {
 
         String sonuc=isim.length()==3 ? harf1==harf2 ? "harf1 ve harf2 eşit " :  harf1==harf3 ?
                      "harf1 ve harf3 eşit " : harf2==harf3 ?
-                     "harf 2 ve harf 3 eşit ": "Girilen isim unıge karakterlere sahip" :
+                     "harf 2 ve harf 3 eşit ": "Girilen isim unıgue karakterlere sahip" :
                       "3 karakter isim girmeliydiniz";
 
         System.out.println(sonuc);
