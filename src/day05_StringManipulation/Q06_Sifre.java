@@ -2,7 +2,7 @@ package day05_StringManipulation;
 
 import java.util.Scanner;
 
-public class Q06 {
+public class Q06_Sifre {
     public static void main(String[] args) {
        /*
         TASK :
@@ -16,14 +16,19 @@ public class Q06 {
 
         if(!email.contains("@")){
             System.out.println("Gecerli bir e-mail giriniz");
-        }else if(email.contains("hotmail.com")){
-            email=email.replace("hotmail","gmail.com");
+        }else if(email.endsWith("gmail.com")){
+            System.out.println("mail1iniz onaylandı ");
+        }else if(!email.endsWith(".com")) {
+            System.out.println("hatalı giris yaptınız");
+        }else  if(!email.endsWith("gmail.com")){
+            email=email.replaceAll(email.substring(email.indexOf("@")+1,email.indexOf(".")),"gmail")+".com";
             System.out.println(email);
+        }
         }
 
 
     }
-}
+
 /*
   Scanner scan=new Scanner(System.in);
         System.out.println("lUTFEN BİR email GİRİNİZ");

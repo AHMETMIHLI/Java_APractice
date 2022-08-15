@@ -2,7 +2,7 @@ package day05_StringManipulation;
 
 import java.util.Scanner;
 
-public class Q12 {
+public class Q12_Mail {
     public static void main(String[] args) {
 		/* TASK :
         Kullanicidan email girmesini isteyin

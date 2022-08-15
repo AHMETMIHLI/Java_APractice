@@ -19,38 +19,52 @@ public class FilmTahmin_KendiProjem {
   kullanıcının her tahmininde doğru ve yanlış tahmin  sayısını console yazdırınız.
   kullanıcının kaybedip veya kazandığını ve tahmin etmesi gereken filmin ismini  console yazdırınız.
  */
-    static List<String> film = new ArrayList<>(Arrays.asList("BABA","JOKER","TİTANİC"));
-    static int tahminSayisi=0;
-    static int dogruTahmin=0;
-    static boolean filmDogru=false;
-    static String str=" ";
-    static char harf=' ';
-    static Scanner scan=new Scanner(System.in);
-
+    static int filmTahminSayisi;
+    static int kalanTahminSayisi;
+    static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
-
-       tahmin();
-
+        List<String> filmler = new ArrayList<>(Arrays.asList("BABA", "JOKER", "DEJAVU", "TITANIC"));
+        filmTahmin(filmler);
     }
 
-    private static void tahmin() {
+    public static void filmTahmin(List<String> filmler) {
+        char harf;
+        int secim;
+        do {
+            System.out.println("Secmek istediginiz film icin bir numara giriniz. (1-" + filmler.size() + ")");
+            secim = scan.nextInt();
+        } while (!(secim >= 1 && secim <= filmler.size()));
 
+        List<String> filmAdiList = new ArrayList<>();
+        String filmAdi = filmler.get(secim - 1);
+        int filmUzunluk = filmler.get(secim - 1).length();
 
-       while(!filmDogru){
-
-           System.out.println("Tahmin ettiginiz film için harf giriniz: ");
-           harf=scan.next().toLowerCase().charAt(0);
-           str+=harf;
-
-           for (int i = 0; i <film.get(i).length() ; i++) {
-
-
-           }
-
-
+        for (int i = 0; i < filmler.get(secim - 1).length(); i++) {
+            filmAdiList.add("*");
         }
-        System.out.println();
-    }
+        filmTahminSayisi = filmler.get(secim - 1).length() * 2;
+        System.out.println("Aranan film : " + filmAdiList);
 
+        do {
+            System.out.print("Tahmin icin bir karakter giriniz : ");
+            harf = scan.next().toUpperCase().charAt(0);
+            for (int i = 0; i < filmUzunluk; i++) {
+                if (harf == filmAdi.charAt(i)) {
+                    filmAdiList.set(i, String.valueOf(harf));
+                }
+            }
+            filmTahminSayisi--;
+
+            int say = 0;
+            for (int i = 0; i < filmUzunluk; i++) {
+                if (!filmAdiList.get(i).equals("*")) {
+                    say++;
+                }
+            }
+            System.out.println("Aranan film : " + filmAdiList);
+            System.out.println("Kalan tahmin hakkiniz : " + filmTahminSayisi);
+            if (say == filmUzunluk) break;
+        } while (filmTahminSayisi != 0);
+    }
 }

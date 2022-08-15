@@ -1,6 +1,8 @@
 package day05_StringManipulation;
 
-public class Q10 {
+import java.util.Scanner;
+
+public class Q10_Regex {
     public static void main(String[] args) {
         /*
             TASK :
@@ -18,6 +20,26 @@ public class Q10 {
 		 3) \\s   ==> space
 		 	 \\S   ==> space disindaki hersey
 	 */
+
+    Scanner scan= new Scanner(System.in);
+        System.out.print("Adinizi girin : ");
+        String ad=scan.next().toUpperCase();
+        System.out.print("Soyadinizi girin : ");
+        String soyAd=scan.next().toUpperCase();
+        System.out.print("Kart no girin : ");
+        String kartNo=scan.next();
+        int uzunluk=kartNo.length();
+
+        ad=ad.charAt(0)+ad.substring(1).replaceAll("\\w","*");
+        soyAd=soyAd.charAt(0)+soyAd.substring(1).replaceAll("\\w","*");
+        kartNo=kartNo.substring(0,13).replaceAll("\\d","*")+kartNo.substring(12);
+
+        if(uzunluk==16){
+            System.out.println("Ad :" + ad);
+            System.out.println("Soyad :" + soyAd);
+            System.out.println("Kart No :" + kartNo);
+        }else  System.out.println("Gecerli kart not giriniz");
+
 
 
     }
