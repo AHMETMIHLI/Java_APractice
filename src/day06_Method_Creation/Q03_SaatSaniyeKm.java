@@ -28,8 +28,6 @@ public class Q03_SaatSaniyeKm {
            int secim = scan.nextInt();
 
            switch (secim) {
-
-
                case 1:
                    System.out.println(sayi * 3600 + "sn");
                    break;

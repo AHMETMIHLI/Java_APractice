@@ -24,7 +24,7 @@ public class Q02_KelimeyiOrtayaYerlestir {
 
     }
 
-    private static void kelimeYerlesTir(String name1, String name2) {
+    public static void kelimeYerlesTir(String name1, String name2) {
 
         String yeniName="";
         int karakterSayisi=name1.length();

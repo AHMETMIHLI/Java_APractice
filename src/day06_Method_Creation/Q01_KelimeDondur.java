@@ -30,21 +30,22 @@ public class Q01_KelimeDondur {
 
     }
 
-    private static String kelime(String str) {
+    public static String kelime(String str) {
+        String kalanHarf="";
 
-        if (str.substring(0, 2).equals("gh")) {
-
-        } else if (str.substring(0, 1).equalsIgnoreCase("g")) {
-            str = str.substring(0, 1) + str.substring(2);
+        if (str.startsWith("gh")) {
+            kalanHarf=str;
+        } else if (str.startsWith("g")) {
+            kalanHarf = str.substring(0, 1) + str.substring(2);
 
         } else if (str.substring(1, 2).equalsIgnoreCase("h")) {
-            str = str.substring(1, 2) + str.substring(2);
+            kalanHarf = str.substring(1, 2) + str.substring(2);
 
         } else {
-            str = str.substring(2);
+            kalanHarf = str.substring(2);
         }
 
-        return str;
+        return kalanHarf;
     }
 }
 

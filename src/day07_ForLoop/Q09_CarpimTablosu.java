@@ -1,6 +1,6 @@
 package day07_ForLoop;
 
-public class Q09 {
+public class Q09_CarpimTablosu {
 
     public static void main(String[] args) {
         // 1 x 1 = 1
@@ -16,6 +16,13 @@ public class Q09 {
         // Yuarıdaki çarpım tablosunu 10 a kadar ekrana yazdırınız.
 
 
+        for (int i = 1; i <= 1; i++) {
+            for (int j = 1; j < 11; j++) {
+                System.out.println(i+"x"+j+"="+(i*j));
+
+            }
+
+        }
 
 
     }

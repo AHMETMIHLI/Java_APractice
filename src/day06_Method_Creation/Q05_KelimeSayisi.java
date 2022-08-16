@@ -1,5 +1,7 @@
 package day06_Method_Creation;
 
+import java.util.Arrays;
+
 public class Q05_KelimeSayisi {
 
     public static void main(String[] args) {
@@ -19,24 +21,24 @@ public class Q05_KelimeSayisi {
     private static void kacKelime(String input) {
 
         String []arr=input.split(" ");
+        System.out.println(Arrays.toString(arr)); //[The, quick, brown, fox, jumps, over, the, lazy, dog.]
         int kelimesayisi=0;
 
+        System.out.println("1.cozum : "+ arr.length);
+
+
         for (int i = 0; i <arr.length ; i++) {
-            arr[i]=arr[i];
-            kelimesayisi++;
+              kelimesayisi++;
         }
-        System.out.println("Kelime sayisi: "+ kelimesayisi); // Kelime sayisi: 9
+        System.out.println("2.Çozum: "+ kelimesayisi); // Kelime sayisi: 9
 
 
     }
 }
 
 
-
-
-
 /*
-        2.Çozum yolu :
+        3.Çozum yolu :
 
         Scanner scan=new Scanner(System.in);
         System.out.println("bir string giriniz");
@@ -52,10 +54,9 @@ public class Q05_KelimeSayisi {
 
         for (int i = 0; i <name1.length() ; i++) {
             if (name1.charAt(i) == ' '){
-                sayac++;
+               sayac++;
 
             }
-
 
         }
         System.out.println("bulunan kelime adedi ="+(sayac+1));

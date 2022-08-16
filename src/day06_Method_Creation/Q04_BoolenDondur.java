@@ -15,15 +15,15 @@ public class Q04_BoolenDondur {
 
          */
 
-       Scanner scan= new Scanner(System.in);
+        Scanner scan= new Scanner(System.in);
         System.out.println("Bir String siriniz: ");
         String str=scan.next();
 
-       boolean varMı=xyz(str);
+        boolean varMı=xyz(str);
         System.out.println(varMı);
     }
 
-    private static boolean xyz(String str) {
+    public static boolean xyz(String str) {
         boolean varMi=false;
         if(str.contains("xyz")){
             varMi=true;
