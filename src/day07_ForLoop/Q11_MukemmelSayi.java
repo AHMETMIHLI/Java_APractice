@@ -1,6 +1,8 @@
 package day07_ForLoop;
 
-public class Q11 {
+import java.util.Scanner;
+
+public class Q11_MukemmelSayi {
     /*
         Bir sayinin mükemmel olup olmadiğini bulan bir program yaziniz.
         Mükemmel sayi : bir sayinin kendisi hariç bölenlerinin toplamı, kendisine eşitse o sayi mükemmeldir.
@@ -18,6 +20,27 @@ public class Q11 {
 
         */
     public static void main(String[] args) {
+
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Sayi giriniz: ");
+        int sayi=scan.nextInt();
+        int toplam=0;
+
+        for (int i = 1; i <sayi ; i++) {
+            if(sayi%i==0){
+                toplam+=i;
+            }
+        }
+            System.out.println("toplam = " + toplam);
+
+            if(sayi==toplam){
+                System.out.println(sayi+ " Mukemmel sayidir ");
+            }else System.out.println("Sayi mükemmel sayi değildir ");
+
+
+
+
+
 
 
     }

@@ -32,7 +32,6 @@ public class Q05_KelimeSayisi {
         }
         System.out.println("2.Çozum: "+ kelimesayisi); // Kelime sayisi: 9
 
-
     }
 }
 
