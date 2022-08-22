@@ -3,7 +3,7 @@ package day10_List;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Q01_ListtenIsim {
+public class Q01_ListtenIsim_Lambda {
 
     public static void main(String[] args) {
         /* TASK :
@@ -42,8 +42,8 @@ public class Q01_ListtenIsim {
 
     }
 
-    private static void aicermeyenleriGetir(List<String> isimler) {
-        isimler.removeIf(t->t.contains("A") || t.contains("A"));
+    public static void aicermeyenleriGetir(List<String> isimler) {
+        isimler.removeIf(t->t.contains("A") || t.contains("a"));
         System.out.println(isimler);
     }
 

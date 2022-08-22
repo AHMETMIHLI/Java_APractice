@@ -3,7 +3,7 @@ package day10_List;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Q03_SayilarınKareleriToplami {
+public class Q03_SayilarınKareleriToplami_lambda {
 
     public static void main(String[] args) {
     /* TASK :
