@@ -1,6 +1,6 @@
 package _09_Arrays;
 
-public class Q04 {
+public class Q04_IstenenDegerlerToplami {
 
     public static void main(String[] args) {
         /*  TASK :
@@ -8,8 +8,34 @@ public class Q04 {
          * yazdiran bir method yaziniz int[] arr= {5,7,-6,4,2,15,3,8,1};
          * int istenenToplam=9;
          */
-
         int[] arr= {5,7,-6,4,2,15,3,8,1};
+        int toplam=9;
+        istenenDegereEsitOlanSayiCiftleri(arr,toplam);
+
+    }
+
+    public static void istenenDegereEsitOlanSayiCiftleri(int[] arr, int toplam) {
+
+
+
+        for (int i = 0; i <arr.length ; i++) {
+            for (int j = 0; j <arr.length;j++){
+                if (arr[i]+arr[j] == toplam){
+                System.out.println(arr[i]+"+"+arr[j]+"="+ toplam);
+            }
+
+            }
+        }
+
+    }
+
+}
+
+
+
+
+/*
+ int[] arr= {5,7,-6,4,2,15,3,8,1};
         int istenenToplam=9;
 
         istenenDegerlerinTopla(arr,istenenToplam);
@@ -32,6 +58,4 @@ public class Q04 {
 
 
     return arr;
-    }
-
-}
+ */

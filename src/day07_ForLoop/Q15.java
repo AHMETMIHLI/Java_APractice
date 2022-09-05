@@ -1,5 +1,7 @@
 package day07_ForLoop;
 
+import java.util.Scanner;
+
 public class Q15 {
 
     /*
@@ -12,6 +14,13 @@ public class Q15 {
         şeklini yazdırınız.  65=A'nın ascıı değeri
         */
     public static void main(String[] args) {
+
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Karakter değerini sayi ile giriniz:");
+
+
+
+
 
     }
 }
