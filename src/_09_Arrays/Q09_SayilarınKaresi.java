@@ -2,7 +2,7 @@ package _09_Arrays;
 
 import java.util.Arrays;
 
-public class Q09 {
+public class Q09_SayilarınKaresi {
 
     public static void main(String[] args) {
 		/* TASK :
@@ -12,15 +12,19 @@ public class Q09 {
         output:{4,36,16,25,64,81}
         */
 
-        int [] arr={2,6,4,5,8,9};
+       int [] arr={2,6,4,5,8,9};
 
-        for (int i = 0; i <arr.length ; i++) {
-
-            arr[i] =arr[i]*arr[i]*arr[i];
-
+        for (int i = 0; i < arr.length ; i++) {
+            arr[i]=arr[i]*arr[i];
         }
         System.out.println(Arrays.toString(arr));
+
 
     }
 
 }
+
+
+
+
+

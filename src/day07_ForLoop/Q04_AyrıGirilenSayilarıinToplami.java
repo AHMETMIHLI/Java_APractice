@@ -16,9 +16,7 @@ public class Q04_AyrıGirilenSayilarıinToplami {
         for (int i = 1; i < 6; i++) {
                 System.out.println("Sayı giriniz ");
                 int sayi=scan.nextInt();
-            if (sayi >=5 && sayi<=10) {
-               toplam+=0;
-            }else {
+            if (!(sayi >=5 && sayi<=10)) {
                 toplam+=sayi;
             }
 

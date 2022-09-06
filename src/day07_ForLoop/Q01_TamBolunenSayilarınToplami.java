@@ -21,24 +21,18 @@ public class Q01_TamBolunenSayilarınToplami {
         13       */
     public static void main(String[] args) {
 
-        Scanner scan=new Scanner(System.in);
-        System.out.println("0'dan 100'e kadar bir tamsayi Giriniz: ");
-        int sayi=scan.nextInt();
         int toplam=0;
-
-        if(sayi<0 || sayi>100){
-            System.out.println("İstenen aralıkta bir sayi giriniz : ");
-        }else {
-            for (int i = 0; i <sayi ; i++) {
+            for (int i = 100; i>13 ; i--) {
                 if(i%13==0){
-                    System.out.println(i+" ");
-                 toplam+=i;
+                System.out.println(i+" ");
+                toplam+=i;
+
                 }
 
-            }
-            System.out.println("Sayiların toplami: "+ toplam);
+            } System.out.println("Sayiların toplami: "+ toplam);
+
         }
 
         
     }
-}
+

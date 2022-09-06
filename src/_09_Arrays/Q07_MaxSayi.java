@@ -1,8 +1,8 @@
 package _09_Arrays;
 
-import java.util.Arrays;
+import java.util.*;
 
-public class Q07 {
+public class Q07_MaxSayi {
 
     public static void main(String[] args) {
         /* TASK :
@@ -12,20 +12,26 @@ public class Q07 {
          * Output : 80
          */
 
-      int [][] arr={{1,2,-3},{41,55},{-61,-17,80}};
+        int [][] arr = {{1, 2, -3}, {41, 55}, {-61, -17, 80}};
+        List<Integer> list=new ArrayList<>();
 
-      int max=0;
-
-
-
+        for (int i = 0; i <arr.length ; i++) {
+            for (int j = 0; j <arr[i].length ; j++) {
+                list.add(arr[i][j]);
             }
-
         }
+        System.out.println(list);
 
+        Collections.sort(list);
+        System.out.println(list);
+        int max=list.get(list.size()-1);
+        System.out.println("Max sayı : "+ max);
 
 
     }
 }
+
+
 
 
 

@@ -1,6 +1,6 @@
 package _09_Arrays;
 
-public class Q10 {
+public class Q10_StringiDegistirme {
 
     public static void main(String[] args) {
         /*
@@ -12,16 +12,23 @@ public class Q10 {
          */
 
         String str="GayetBasarılı";
-
-        String str1="Coook";
-
-        str1+=str.substring(5);
-
-        System.out.println(str1);
-
+        str=str.replace("Gayet","Coook");
+        System.out.println(str);
 
 
 
     }
 
 }
+
+
+/*
+    String str="GayetBasarılı";
+
+    String str1="Coook";
+
+        str1+=str.substring(5);
+
+                System.out.println(str1);
+
+*/
