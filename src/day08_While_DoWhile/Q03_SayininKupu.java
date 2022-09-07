@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Q03_SayininKupu {
 
     public static void main(String[] args) {
-      /*   Kullanicidan 2 sayi alaliniz.
+      /*   Kullanicidan 2 sayi aliniz.
         1. sayi taban
         2. sayi Ust
         1 sayinin ussunu hesaplatan code create ediniz.
@@ -19,9 +19,14 @@ public class Q03_SayininKupu {
         int tabanSayi=scan.nextInt();
         System.out.println("Us sayiyi giriniz: ");
         int usSayi=scan.nextInt();
+        int sonuc=0;
 
-        int sonuc= (int) Math.pow(tabanSayi,usSayi);
-        System.out.println("Girilen sayinin küpü : "+sonuc);
+        while(usSayi!=0){
+            sonuc= (int) Math.pow(tabanSayi,usSayi);
+            break;
+
+        } System.out.println("Girilen sayinin küpü : "+sonuc);
+
 
 
 

@@ -18,7 +18,7 @@ public class Q02_IndexiTekOlanlar {
     public static void indexiTekOlanElemanlar(String kelime) {
         int uzunluk=kelime.length();
         int i=0;
-        while (i<uzunluk){
+        while (i<uzunluk){   // MATEMATİK
             if(kelime.indexOf(kelime.charAt(i))%2!=0){
                 System.out.print(kelime.charAt(i)+" ");
             }

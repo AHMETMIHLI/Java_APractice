@@ -1,6 +1,8 @@
 package day08_While_DoWhile;
 
-public class Q14 {
+import java.util.Scanner;
+
+public class Q14_Faktoriyel {
 
     public static void main(String[] args) {
         /* TASK :
@@ -14,6 +16,18 @@ public class Q14 {
         Bir sayı giriniz: 3*2*1
         Faktöriyeli 6
      */
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("bir sayi giriniz : ");
+        int sayi =scan.nextInt();
+
+        int faktoriyel=1;
+
+        while(sayi>0){
+            faktoriyel *= sayi;
+            sayi--;
+        }
+        System.out.println("faktoriyel :"+faktoriyel);
 
     }
 }

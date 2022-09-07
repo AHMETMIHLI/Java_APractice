@@ -17,7 +17,7 @@ public class Q07_XGirileneKadar {
           System.out.println("Deger giriniz:");
           deger=scan.next();
           if(deger.equalsIgnoreCase("x")) break;
-             System.out.println("Program çalışıyor");
+           System.out.println("Program çalışıyor");
 
       } while(!deger.equalsIgnoreCase("x"));
           System.out.println("Program bitti");
