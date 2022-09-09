@@ -40,5 +40,6 @@ public class Q04_OrtalamayiGecenOgrenciSayisi {
         System.out.println("Ortalamayı gecen öğrenci sayisi : " + ortalamaUstu);
 
 
+
     }
 }

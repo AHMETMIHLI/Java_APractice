@@ -3,7 +3,7 @@ package day10_List;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Q08 {
+public class Q08_ElemanlarıSetEtme {
 
     public static void main(String[] args) {
         /* TASK :

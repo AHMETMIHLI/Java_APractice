@@ -1,5 +1,6 @@
 package day10_List;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Q09 {
@@ -13,36 +14,34 @@ public class Q09 {
        input : Learning java is easy
        output: maximumCounts occurring character is : a
         */
-        Scanner scan=new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
         System.out.println("lutfen bir String giriniz");
-        String str[]= scan.nextLine().split("");
+        String str[] = scan.nextLine().split("");
 
-        String enCokTekrarEden="";
-        int maxSayac=0;
-        int sayac=0;
 
-        for (int i=0; i<str.length; i++){
-            for (int j=i+1; j<str.length; j++){
+        String enCokTekrarEden = "";
+        int maxSayac = 0;
+        int sayac = 0;
 
-                if (str[i].equalsIgnoreCase(str[j])){
+        for (int i = 0; i < str.length; i++) {
+            for (int j = i + 1; j < str.length; j++) {
+
+                if (str[i].equalsIgnoreCase(str[j])) {
                     sayac++;
 
                 }
             }
-            if(sayac>maxSayac){
-                maxSayac=sayac;
-                enCokTekrarEden=str[i];
-            }else if(sayac==maxSayac){
-                enCokTekrarEden+=","+str[i];
+            if (sayac > maxSayac) {
+                maxSayac = sayac;
+                enCokTekrarEden = str[i];
+            } else if (sayac == maxSayac) {
+                enCokTekrarEden += "," + str[i];
 
             }
-                 sayac=0;
+            sayac = 0;
         }
         System.out.println(enCokTekrarEden);
-
-
-
 
 
     }

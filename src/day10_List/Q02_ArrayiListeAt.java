@@ -13,6 +13,11 @@ public class Q02_ArrayiListeAt {
            Output:[Ali, Ayse, Can, Hasan, Suzan, Veli]
          */
         String [] [] input = {{"Ali","Veli","Ayse"},{"Hasan","Can"},{"Suzan"}};
+
+        arraydanListe(input);
+
+   }
+    public static void arraydanListe(String[][] input) {
         List<String>isimler=new ArrayList<>();
 
         for (int i = 0; i <input.length ; i++) {
@@ -24,11 +29,10 @@ public class Q02_ArrayiListeAt {
         }
         System.out.println("isimler = " + isimler);  //isimler = [Ali, Veli, Ayse, Hasan, Can, Suzan]
 
-        //2.çözüm yolu lambda
-
-
-
     }
+
+    //2.çözüm yolu lambda
+
 }
 
 
