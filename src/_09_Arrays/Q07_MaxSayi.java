@@ -13,6 +13,13 @@ public class Q07_MaxSayi {
          */
 
         int [][] arr = {{1, 2, -3}, {41, 55}, {-61, -17, 80}};
+
+        maxDegeriBul(arr);
+
+    }
+
+    public static void maxDegeriBul(int[][] arr) {
+
         List<Integer> list=new ArrayList<>();
 
         for (int i = 0; i <arr.length ; i++) {
@@ -26,7 +33,6 @@ public class Q07_MaxSayi {
         System.out.println(list);
         int max=list.get(list.size()-1);
         System.out.println("Max sayı : "+ max);
-
 
     }
 }

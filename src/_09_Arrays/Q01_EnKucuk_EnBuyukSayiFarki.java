@@ -21,7 +21,6 @@ public class Q01_EnKucuk_EnBuyukSayiFarki {
 			arr[i]=num;
 		}
 		System.out.println(Arrays.toString(arr));
-
 		Arrays.sort(arr);
 		System.out.println(Arrays.toString(arr));
 
@@ -29,6 +28,19 @@ public class Q01_EnKucuk_EnBuyukSayiFarki {
 		int enBuyukSayi=arr[arr.length-1];
 		int fark=enBuyukSayi-enKucukSayi;
 		System.out.println("fark = " + fark);
+
+
+
+		// lambda ile çözümü
+		int max1= Arrays.stream(arr).max().getAsInt();
+		System.out.println("Lambda ile Maximum Sayi: "+ max1);
+		int min1=Arrays.stream(arr).min().getAsInt();
+		System.out.println("Lambda ile Minimum Sayi: "+min1 );
+		int fark1=  max1-min1;
+		System.out.println(("Lambda ile max ve min  fark : "+ fark1));
+
+
+
 
 
 

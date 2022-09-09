@@ -28,6 +28,8 @@ public class Q11_MDArayylerinToplami {
         }
         System.out.println("toplamarr2 = " + toplamarr2);
 
+        System.out.println("iki Array Toplami : "+ (toplamarr1+toplamarr2));
+
     }
 
 }

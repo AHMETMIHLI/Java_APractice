@@ -12,12 +12,14 @@ public class Q03_IsaretDegisenArray {
          */
 
       int [] arr= { 1,2,-3,4,-5,-6};
+        System.out.println(Arrays.toString(arr));
 
       arrninIsaretDegirtirmisHali(arr);
 
     }
 
-    private static void arrninIsaretDegirtirmisHali(int[] arr) {
+    public static void arrninIsaretDegirtirmisHali(int[] arr) {
+
         int [] yeniArr=new int[arr.length];
 
         for (int i = 0; i <arr.length ; i++) {

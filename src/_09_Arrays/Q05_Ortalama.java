@@ -1,5 +1,7 @@
 package _09_Arrays;
 
+import java.util.Arrays;
+
 public class Q05_Ortalama {
 
     public static void main(String[] args) {
@@ -30,6 +32,12 @@ public class Q05_Ortalama {
         }
         }
 
+        // Lambda ile çözüm
+
+        int ort= (int) Arrays.stream(input).average().getAsDouble();
+        System.out.println("Lamda ile toplam : "+ ort);
+
+        Arrays.stream(input).filter(t->t>ort).forEach(t-> System.out.print("Lamda ile elemanlar : "+t+" "));
 
 
 

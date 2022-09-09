@@ -12,7 +12,9 @@ public class Q13_TamBolunenSayilar {
 
          */
        Scanner scan= new Scanner(System.in);
-       int [] arr= new int[8];
+       int [] arr= new int[8]; // [0,0,0,0,0,0,0,0]
+        System.out.println(Arrays.toString(arr));
+        int count=0;
 
        int i=0;
        while (i<8){
@@ -25,9 +27,12 @@ public class Q13_TamBolunenSayilar {
         for (int j = 0; j <arr.length ; j++) {
             if(arr[j]%3==0){
                 System.out.print(arr[j]+" ");
+                count++;
             }
 
         }
+        System.out.println();
+        System.out.println("3 e bölünebilen sayı adedi : "+ count);
 
 
     }

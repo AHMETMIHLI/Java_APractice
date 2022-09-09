@@ -1,6 +1,11 @@
 package _09_Arrays;
 
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class Q06_Max_MinSayi {
     public static void main(String[] args) {
@@ -19,12 +24,15 @@ public class Q06_Max_MinSayi {
         System.out.println(Arrays.toString(arr));
         System.out.println("Minimum sayi : "+ arr[0]);
         System.out.println("Maksimum sayi : "+ arr[arr.length-1]);
-        System.out.println("Maksimum 2 büyük sayi : "+ arr[arr.length-2]);
+        System.out.println("Maksimum 2. büyük sayi : "+ arr[arr.length-2]);
 
 
         // Lambda ile çözüm
+
+        int max1=Arrays.stream(arr).max().getAsInt();
         System.out.println("Lambda ile Maximum Sayi: "+ Arrays.stream(arr).max().getAsInt());
         System.out.println("Lambda ile Minimum Sayi: "+ Arrays.stream(arr).min().getAsInt());
+
 
 
     }

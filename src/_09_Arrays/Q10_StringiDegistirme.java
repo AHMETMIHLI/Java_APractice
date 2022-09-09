@@ -1,5 +1,7 @@
 package _09_Arrays;
 
+import java.util.Arrays;
+
 public class Q10_StringiDegistirme {
 
     public static void main(String[] args) {
@@ -12,8 +14,21 @@ public class Q10_StringiDegistirme {
          */
 
         String str="GayetBasarılı";
-        str=str.replace("Gayet","Coook");
-        System.out.println(str);
+        String [] arr=str.split(" ");
+        System.out.println(Arrays.toString(arr));
+
+        String [] yeniarr=new String[arr.length];
+
+        for (int i = 0; i <arr.length ; i++) {
+            if(arr[i].contains("Gayet")){
+                yeniarr[i]=arr[i].replace("Gayet","Cook");
+            }
+
+        }
+        System.out.println(Arrays.toString(yeniarr));
+
+
+
 
 
 

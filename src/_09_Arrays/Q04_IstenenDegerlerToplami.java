@@ -1,5 +1,7 @@
 package _09_Arrays;
 
+import java.util.Arrays;
+
 public class Q04_IstenenDegerlerToplami {
 
     public static void main(String[] args) {
@@ -10,6 +12,10 @@ public class Q04_IstenenDegerlerToplami {
          */
         int[] arr= {5,7,-6,4,2,15,3,8,1};
         int toplam=9;
+
+        int toplam1= Arrays.stream(arr).sum();
+        System.out.println(toplam1);
+
         istenenDegereEsitOlanSayiCiftleri(arr,toplam);
 
     }
@@ -17,9 +23,8 @@ public class Q04_IstenenDegerlerToplami {
     public static void istenenDegereEsitOlanSayiCiftleri(int[] arr, int toplam) {
 
 
-
         for (int i = 0; i <arr.length ; i++) {
-            for (int j = 0; j <arr.length;j++){
+            for (int j = i+1; j <arr.length;j++){
                 if (arr[i]+arr[j] == toplam){
                 System.out.println(arr[i]+"+"+arr[j]+"="+ toplam);
             }
